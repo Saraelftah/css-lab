@@ -1,0 +1,258 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #000;
+
+}
+/* hero section */
+.hero {
+    width: 80%;
+    margin: auto;
+    background-color: #fff;
+    height: auto;
+    overflow: hidden;
+}
+
+.hero::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* nav section */
+.nav {
+    float: right;
+    margin: 5px 0 50px; 
+}
+
+.nav ul {
+    list-style: none;
+}
+
+.nav ul li {
+    float: left;
+    padding: 15px 20px;
+}
+.nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.nav ul li a:hover {
+    color: dodgerblue;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+/* content section */
+.content {
+    clear: both;
+    overflow: hidden;
+    padding-top: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+.content .img-box{
+    width: 243px;
+    height: 243px;
+    background-color: aqua;
+    float: right;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.img-box img{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text {
+    float: left;
+    padding-right: 15px;
+    width: 45%;
+}
+
+.text h1{
+    padding: 10px 0 20px;
+    font-size: 40px;
+}
+
+.content .text button {
+    display: block;
+    margin-top: 30px;
+    padding: 15px 20px;
+    color: #fff;
+    background-color: #FF6464;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.content .text button:hover{
+    color: dodgerblue;
+}
+
+/* posts section */
+.posts{
+    background: #EDF7FA;
+    margin-top: 50px;
+    overflow: auto;
+    padding: 30px 0;
+    height: 396px;
+}
+
+.post-container, .post-nav{
+    width: 80%;
+    margin: auto;  
+}
+
+.post-nav{
+    margin-bottom: 30px;  
+}
+
+.post-nav .recent, .post-nav .view {
+    white-space: nowrap;
+}
+
+.post-nav .recent{
+    margin-right: 77%;
+    font-size: 20px;
+}
+
+.post-nav .view{
+    color: #00A8CC;
+}
+
+.post1, .post2{
+    float: left;
+    width: 45%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+
+}
+
+.post1{
+    margin-right: 5%;
+}
+
+.post1 h2, .post1 p, .post2 h2, .post2 p{
+    margin: 15px 10px 30px;
+}
+
+.post-date {
+    display: inline-block;
+    margin: 0 0 30px 10px ;
+    border-right: 1px solid black;
+    padding-right: 20px;
+}
+
+.post-name {
+    padding-left: 20px;
+}
+
+/* work section */
+.hero .works{
+    background-color: #fff;
+    overflow: hidden;    
+}
+
+.last-div{
+    width: 80%;
+    margin: auto;
+}
+
+.work-nav{
+    padding: 20px 0;
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+.hero .works .work-img {
+    width: 150px;
+    border-radius: 6px;
+    float: left;
+    margin-right: 20px;
+}
+
+.work1, .work2, .work3{
+    padding-top: 15px;
+}
+
+.work-name {
+    font-weight: 900;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.last-div .work-year {
+    color: #fff;
+    background-color: #000;
+    border-radius: 15px;
+    padding: 3px 6px;
+    margin-right: 20px;
+}
+
+.last-div .work{
+    color: #0000004f;
+}
+
+.works .work-desc {
+    margin: 10px 0;
+}
+
+/* footer section */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px; 
+    color: #2c2c54; 
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: dodgerblue; 
+}
+
+/* responsive styles */
+@media screen and (max-width: 728px){
+    .hero{
+        width: 100%;
+    }
+   
+    .text, .img-box {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .text button {
+        margin:  50px auto;
+    }
+    .content .img-box  {
+        float: none;
+        margin: 20px auto;
+    } 
+    .img-box img {
+        display: block;
+        margin: 0 auto;
+    }
+    
+}
